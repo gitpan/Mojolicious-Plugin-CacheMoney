@@ -50,8 +50,10 @@ my $static_prereqs = do { my $x = {
                       },
        'runtime' => {
                       'requires' => {
+                                      'CHI' => '0',
                                       'Mojo::Base' => '0',
-                                      'perl' => '5.006'
+                                      'Mojo::Util' => '0',
+                                      'perl' => '5.010'
                                     }
                     },
        'test' => {
@@ -68,7 +70,7 @@ my $static_prereqs = do { my $x = {
                                    'IPC::Open3' => '0',
                                    'List::Util' => '0',
                                    'Test::More' => '0',
-                                   'perl' => '5.006',
+                                   'perl' => '5.010',
                                    'strict' => '0',
                                    'version' => '0',
                                    'warnings' => '0'
